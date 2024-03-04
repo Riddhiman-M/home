@@ -1,0 +1,150 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, userscalable=no">
+	<title>Riddhiman Moulick</title>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/my_styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="../js/jquery2-2-0.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+        })
+    </script>
+</head>
+<body>
+
+    <nav id="main-nav" class="navbar navbar-inverse">  
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="../images/R_logo.png" class="logo" alt="logo">
+              </a>
+            </div>
+        <div class="collapse navbar-collapse bs-js-navbar-scrollspy" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">About Me</a></li>
+            <li><a href="../publications/publications.html">Publications</a></li>
+            <li class="active"><a href="#experience">Experiences</a></li>
+            <li><a href="../education/education.html">Education</a></li>
+            <li><a href="../projects/projects.html">Projects</a></li>
+            <!-- <li><a href="#hobbies">Hobbies</a></li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.linkedin.com/in/riddhiman-moulick-072354204/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="https://github.com/Riddhiman-M" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://twitter.com/Riddhiman003" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href="https://www.facebook.com/riddhiman.moulick/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="mailto: riddhimanmoulick@gmail.com"><span class="glyphicon glyphicon-envelope" ></span></a></li>
+          </ul>            
+          <!-- <form class="navbar-form navbar-right">
+             <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Search">
+             </div>
+             <button type="submit" class="btn btn-danger">Submit</button>
+              </form> -->
+        </div>  
+       </div>  
+     </nav>
+
+
+     <!-- <div data-spy="scroll" data-target="#main-nav" data-offset="0" style="height: 100%; overflow-y: scroll;"> -->
+
+        <section id="experience">
+            <!-- <div class="container"> -->
+                <div class="row">
+                <h3 class="bd-title top-spacing section-title"><b><u>Work Experiences</u></b></h3>
+                <h4><img src="../images/KGP-logo.png" alt="KGP-Logo" class="logo2"> <b>
+                    Undergraduate Student Researcher under <a href="https://cse.iitkgp.ac.in/~adas/index.php">Dr. Abir Das</a> | <a href="#" data-toggle="tooltip" data-placement="right" title="Jul '23 - Present">CVIR, IIT Kharagpur</a></b><br></h4>
+                    <!-- <b>Objective: </b>To enable digital assistant to initiate contextual conversations with user -->
+                <ul class="list-group">
+                    <li>Pursuing my undergraduate thesis in the field of <b>continual learning</b> and <b>domain adaptation</b>, under the supervision of Prof. Abir Das.</li>
+                    <li>Developed a novel technique for class-incremental continual learning using dynamically created prompts applied on a pretrained-ViT backbone.</li>
+                    <li>Used class attributes obtained via LLM querying, to compute inter-task similarity, for better utilization of task-shared concepts. (<a href="../publications/publications.html">Paper @CVPR '24</a>).</li>
+                    <li>Presently exploring possibilities to tackle the fully test-time adaptation challenge with a continuously varying target domain (continual TTA setting).</li>
+                    <!-- <li>The user is given a list of pod actions like enabling monitoring or SSH on pods and the user is notified via mail upon action completion.</li> -->
+                </ul>
+
+                <br>
+                <h4><img src="../images/Oracle-Logo.png" alt="Oracle-Logo" class="logo2"> <b>
+                    Cloud Applications Developer Intern | <a href="#" data-toggle="tooltip" data-placement="right" title="May '23 - Jul '23">Oracle</a></b></h4><br>
+                    <!-- <b>Objective: </b>To enable digital assistant to initiate contextual conversations with user -->
+                <ul class="list-group">
+                    <li><u>Background</u>: <b>Becky</b> is a digital assistant which allows developers to triage, get information or perform actions on pods under provisioning.</li>
+                    <li><u>Objective</u>: Implementing a <b>user recommendation</b> feature that detects user interaction with Becky and automatically provides relevant action suggestions.</li>
+                    <li><u>Procedure</u>: Developed custom components using JS and created Flask-exposed backend modules that fetch data from REST APIs and conduct analysis on them.</li>
+                    <li><u>Other Features</u>: A warning message is given to the user if any of their pods exceed the average provisioning time.
+                        The user can also directly ask the bot to perform actions like enabling monitoring or SSH on pods, and notifications will be sent both via the bot interface as well as via mail.</li>
+                    <!-- <li>The user is given a list of pod actions like enabling monitoring or SSH on pods and the user is notified via mail upon action completion.</li> -->
+                </ul>
+                
+                <br>
+                <!-- <h4><b>Resarch Intern</b><h5>(<i>Prof. Suman Chakraborty</i> and <i>Dr. Arka Bhowmik</i>)</h5></h4> -->
+                <h4><img src="../images/KGP-logo.png" alt="KGP-Logo" class="logo2"> <b>
+                    Research Intern under <a href="https://scholar.google.com/citations?user=_aShDmcAAAAJ&hl=en">Dr. Arka Bhowmik</a> and <a href="https://scholar.google.co.in/citations?user=2RQrq70AAAAJ&hl=en">Dr. Suman Chakraborty</a> | <a href="#" data-toggle="tooltip" data-placement="right" title="Feb '23 - May '23">IIT Kharagpur</a> </b><br></h4>
+                <ul class="list-group">
+                    <li>Developed a Chest-Xray based lung disease identification and classification model and corresponding application.</li>
+                    <li>Tried out different Deep-Learning networks and augmentation techniques to identify anomalies in the lung scans and check model efficacy.</li>
+                    <li>Developed an Android application to act as an user interface to collect patient metadata and Chest-Xray images and stored them in firebase.</li>
+                </ul>
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <!-- <section id="hobbies">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec et egestas ante, quis aliquam elit. Ut eu facilisis arcu. Morbi elementum, leo eget rhoncus maximus, eros velit bibendum quam, at consectetur ante justo et risus.
+                In hac habitasse platea dictumst. Praesent dolor erat, lacinia at mi in, tristique placerat urna. Mauris egestas justo ut odio molestie faucibus.
+                Maecenas in nisi a odio accumsan hendrerit. Nunc euismod bibendum accumsan. Nulla lobortis feugiat lectus vel tempor.</p>
+        </section> -->
+
+        <!-- <div class="footer">
+            <p style="color: #777;">© 2023 Riddhiman Moulick </p>
+            <div class="centered-text">
+                <i><h5><p id="conclusion1">All that glisters is not gold ~ Thomas Alva Edison</p></h5></i>
+            </div>
+
+            <div class="centered-text">
+                <i><p style="font-family:'alexbrush'" id="conclusion2"> Thanks for visiting! </p></i>
+            </div>
+        </div> -->
+
+        <!-- <div class="container" id="footer">
+            <div class="row-1">
+                <p style="color: #777;">© 2023 Riddhiman Moulick </p>
+            </div>
+
+            <div class="row-2">
+                <i><h5><p id="conclusion1">All that glisters is not gold ~ Thomas Alva Edison</p></h5></i>
+            </div>
+
+            <div class="row-3">
+                <i><p style="font-family:'alexbrush'" id="conclusion2"> Thanks for visiting! </p></i>
+            </div>
+        </div> -->
+
+     <!-- </div> -->
+     <div class="footer1">
+      <footer class="text-center text-lg-start">
+            
+          
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(17, 30, 12, 0.2);">
+          © 2023 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Riddhiman Moulick</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+     </div>
+
+</body>
+</html>
