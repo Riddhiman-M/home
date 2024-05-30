@@ -84,14 +84,14 @@
 body {
     background: #f2f4f3;
     /* background: linear-gradient(-45deg, #84ded3 25%, #99b7e5 25%, #84ded3 50%, #99b7e5 50%, #84ded3 75%, #99b7e5 75%); */
-    color: #131212; /* Set the desired color for text */
+    color: #f8f5f5; /* Set the desired color for text */
     font-family: "Times New Roman", Times, serif; /* Set the desired font family */
     font-weight: 500;
     font-size: 1.6em; /* Set the desired font size */
 }
 
 a {
-    color: #6258e6; /* Set the desired color for links */
+    color: #b8d8ec; /* Set the desired color for links */
 }
 
 section{
@@ -147,7 +147,7 @@ li {
 }
 
 li::before {
-    content: '⬤';
+    /* content: '⬤'; */
     position: absolute;
     left: -2.7em;          /* Adjust this value so that it appears where you want.*/
     top: 0.55em;
@@ -186,7 +186,7 @@ li::before {
 .timeline-row .timeline-time {
     position: absolute;
     right: 50%;
-    top: 21px;
+    top: 14px;
     text-align: right;
     margin-right: 20px;
     color: #22252b;
@@ -271,6 +271,7 @@ li::before {
 
 .timeline-row:nth-child(even) .timeline-content {
     margin-left: 39px;
+    color: black;
 }
 /*Below is the left pointing arrow*/
 .timeline-row:nth-child(even) .timeline-content:after {
@@ -287,16 +288,24 @@ li::before {
 .timeline-row:nth-child(odd) {
     padding-left: 0;
     padding-right: 50%;
+    color: black;
 }
+
+.timeline-row:nth-child(even) .timeline-time {
+    color: #f2f4f3;
+}
+
 .timeline-row:nth-child(odd) .timeline-time {
     right: auto;
     left: 50%;
     /* text-align: left; */
     margin-right: 0;
     margin-left: 20px;
+    color:#f2f4f3
 }
 .timeline-row:nth-child(odd) .timeline-content {
     margin-right: 40px;
+    color: black;
 }
 /*Below is the right pointing arrow*/
 .timeline-row:nth-child(odd) .timeline-content:after {
@@ -364,7 +373,7 @@ li::before {
 
 
 #about {
-    border: 2px solid black; /* You can adjust the thickness and color of the border as needed */
+    border: 2px solid rgb(252, 250, 250); /* You can adjust the thickness and color of the border as needed */
     border-radius: 10px; /* Optional: Add border radius for rounded corners */
     margin-top: 40px; /* Adjust the margin-top value to reduce the gap between sections */
     padding-left: 10px; /* Optional: Add some padding to give space between the content and the border */
@@ -381,7 +390,8 @@ li::before {
 /* --------------------------- */
 
 .card {
-    background: #fff;
+    background: #f5f6f8;
+    color:black;
     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     border: 0;
@@ -466,7 +476,7 @@ li::before {
     margin-top: 80px;
     width: 100%;
     /* padding-left: 50px; */
-    background: #333b3b;
+    /* background: #333b3b; */
     color: #ffffff;
     padding-top: 7px;
     /* display: flex;
@@ -480,28 +490,6 @@ li::before {
     }
 }
 
-/* .footer #conclusion{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-} */
-
-/* .centered-text {
-    flex: 1 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* #footer{
-    display:flex; 
-    margin-top: 80px;
-    width: 100%;
-    background: #22252b;
-    color: #ffffff;
-} */
 
 .publication_footer{
     position: fixed;
@@ -513,6 +501,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("../images/web_bg_DallE.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .content {
