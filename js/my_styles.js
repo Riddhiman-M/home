@@ -23,3 +23,17 @@ $(document).ready(function () {
       });
     });
   });
+
+async function typeSentence(sentence, eleRef) {
+  letters = sentence.split("");
+  let i=0;
+  while(i<letters.length) {
+    await MsWait(300)
+    $(eleRef).append(letters[i]);
+    i++;
+  }
+}
+
+function MsWait(secs) {
+  return new Promise(resolve => setTimeout(resolve, secs));
+}

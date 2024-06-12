@@ -11,6 +11,7 @@
     <link rel="icon" href="./images/R_logo.png">
     <script src="js/jquery2-2-0.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+  <script src="js/my_styles.js"></script>
     <script>
         $(function(){
             $("[data-toggle='tooltip']").tooltip();
@@ -60,10 +61,19 @@
 
      <!-- <div data-spy="scroll" data-target="#main-nav" data-offset="0" style="height: 100%; overflow-y: scroll;"> -->
         <!-- Adding my name as page header-->
-        <div class="container">
-         <!-- style="background-color: #f2f4f3; color: black;"> -->
-            <h1 class="text-center"><b>Riddhiman Moulick</b></h1>
+        <div class="typing-container">
+          <img src="images/waving_boy_noBG.png" alt="waving-boy" height="60px">
+          <h1><b> </b></h1>
+          <h1><b><span id="sentence" class="sentence"></span></b></h1>
+          <span class="input-cursor"></span>
         </div>
+        <script>
+          window.onload = function() {
+            const sentence = "Hello World!";
+            const eleRef = "#sentence";
+            typeSentence(sentence, eleRef);
+          };
+        </script>
         <section id="about">
             <div class="about">
                 <img class="self" src="images/Self.jpg" alt="self" width="300px" id="Me">
@@ -73,7 +83,7 @@
                        </a>
                     <div class="media-body">
                     <h3 class="mt-0"><b><u>About me</u></b></h3>
-                        <p>Hello there! I'm a final year undergraduate student at IIT Kharagpur,
+                        <p>I'm a final year undergraduate student at IIT Kharagpur,
                             pursuing my Major in Electrical Engineering and a Minor in Computer Science and Engineering.
                             I have a keen interest in programming, software development, and deep learning, 
                             with a strong inclination to explore the fields of multimodal AI and transferrable knowledge systems.

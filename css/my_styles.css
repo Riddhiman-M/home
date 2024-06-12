@@ -3,6 +3,62 @@
     justify-content: center;
 }
 
+.typing-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+    /* padding-left: 50px; */
+    /* background: #333b3b; */
+    color: #ffffff;
+    padding-top: 7px;
+}
+
+.typing-container img {
+    margin-right: 10px; /* Adjust spacing between the image and text if needed */
+  }
+
+.typing-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typing-container2 img {
+    margin-right: 10px; /* Adjust spacing between the image and text if needed */
+  }
+
+  .typing-container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.typing-container3 img {
+    margin-right: 10px; /* Adjust spacing between the image and text if needed */
+  }
+
+.input-cursor {
+    display: inline-block;
+    margin-top: 18px;
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    margin-left: 8px;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
 #navbar {
     
     position: fixed;
