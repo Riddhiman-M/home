@@ -439,10 +439,35 @@ li::before {
     padding-bottom: 5px;
 }
 
+#notices ul li:before {
+    content: "\f0a1"; /* Unicode for fa-bullhorn */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1000;
+    font-size: 0.8em;
+    left: 0em;
+    top: 0.2em;
+}
+
 #notices {
     margin-top: 25px; /* Adjust the margin-top value to reduce the gap between sections */
 }
 
+
+
+.list-group li:before {
+    content: "\f0a9"; /* Unicode for fa-arrow-circle-right */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1em;
+}
+
+.list-group li {
+    position: relative;
+    padding-left: 25px; /* Adjust as needed */
+}
 
 /* --------------------------- */
 
@@ -557,6 +582,9 @@ li::before {
 body {
     display: flex;
     flex-direction: column;
+    /* font-family: Candara; */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
     min-height: 100vh;
     background-image: url("../images/web_bg_DallE3.jpg");
     background-repeat: no-repeat;
