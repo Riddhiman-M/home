@@ -573,19 +573,11 @@ li::before {
 }
 
 
-.publication_footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-}
 body {
     display: flex;
     flex-direction: column;
-    /* font-family: Candara; */
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
-    min-height: 100vh;
     background-image: url("../images/web_bg_DallE3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -603,6 +595,26 @@ body {
     background-color: rgba(17, 30, 12, 0.2);
     text-align: center;
     margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+/* Make the page take full height and push footer down */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 {
+    margin-top: auto;
 }
 
 .row-1{
