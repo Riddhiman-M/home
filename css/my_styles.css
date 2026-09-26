@@ -1,3 +1,48 @@
+/* Network background canvas */
+#networkBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Theme variables */
+:root {
+    --bg-gradient-1: #1a1a2e;
+    --bg-gradient-2: #16213e;
+    --bg-gradient-3: #0f3460;
+    --bg-gradient-4: #1a1a2e;
+    --text-primary: #f8f5f5;
+    --text-secondary: #b8d8ec;
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --nav-bg: rgba(0, 0, 0, 0.3);
+    --footer-bg: rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="light"] {
+    --bg-gradient-1: #667eea;
+    --bg-gradient-2: #764ba2;
+    --bg-gradient-3: #6B8DD6;
+    --bg-gradient-4: #8E37D7;
+    --text-primary: #ffffff;
+    --text-secondary: #e8f4ff;
+    --card-bg: rgba(255, 255, 255, 0.15);
+    --card-border: rgba(255, 255, 255, 0.2);
+    --nav-bg: rgba(0, 0, 0, 0.2);
+    --footer-bg: rgba(0, 0, 0, 0.15);
+}
+
+/* Animated gradient background */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -144,16 +189,18 @@
 }
 
 body {
-    background: #f2f4f3;
-    /* background: linear-gradient(-45deg, #84ded3 25%, #99b7e5 25%, #84ded3 50%, #99b7e5 50%, #84ded3 75%, #99b7e5 75%); */
-    color: #f8f5f5; /* Set the desired color for text */
-    font-family: "Times New Roman", Times, serif; /* Set the desired font family */
+    background: linear-gradient(-45deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3), var(--bg-gradient-4));
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    color: var(--text-primary);
+    font-family: "Times New Roman", Times, serif;
     font-weight: 500;
-    font-size: 1.6em; /* Set the desired font size */
+    font-size: 1.6em;
+    min-height: 100vh;
 }
 
 a {
-    color: #b8d8ec; /* Set the desired color for links */
+    color: var(--text-secondary);
 }
 
 section{
@@ -583,10 +630,6 @@ body {
     flex-direction: column;
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
-    background-image: url("../images/web_bg_DallE3.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .content {
@@ -597,9 +640,33 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-    background-color: rgba(17, 30, 12, 0.2);
+    background-color: var(--footer-bg);
     text-align: center;
-    margin-top: auto; /* This pushes the footer to the bottom */
+    margin-top: auto;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    color: var(--text-primary);
+    font-size: 1.4em;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* Make the page take full height and push footer down */
